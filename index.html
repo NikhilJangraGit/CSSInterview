@@ -9,6 +9,16 @@
             background-color: rgb(6 39 101);
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: showw 1s ease-in-out;
+        }
+        @keyframes showw {
+            from{
+                opacity: 0;
+            
+            }
+            to{
+                opacity: 1;
+            }
         }
         table{
             border: 2px solid whitesmoke;
@@ -34,8 +44,22 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.692);
             z-index: 1000;
             border-radius: 0 70px 70px 20px;
+            animation: slide 1s ease-in;
+            transition: 0.5s;
         }
-
+        @keyframes slide {
+            from{
+                transform: translatex(-100%);    
+                border-radius: 0;
+                background-color: rgb(6 39 101) ;
+            }
+        
+        to{
+            transform: translateY(0);
+            border-radius: 0 70px 70px 20px;
+             background: #489bef;
+        }
+    }
         .content{
             margin-top: 60px;
             padding: auto;
